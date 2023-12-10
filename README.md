@@ -1,4 +1,4 @@
-# -RUST-Asyncronous_Client-Server_CHAT_Application
+# Asyncronous CHAT with RUST
 
 TO RUN:
 
