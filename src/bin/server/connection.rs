@@ -28,7 +28,7 @@ impl Leaving {
 //to take a tcpstream, a chattracker and returns the chatresult
 // handle all the connections
 pub async fn handle(socket: TcpStream, chats: Arc<ChatTracker>) -> ChatResult<()> {
-  let Leaving = Arc::new(Leaving::new(socket.clone()));
+  let leaving = Arc::new(Leaving::new(socket.clone()));
 
   let buffer = BufReader::new(socket);
 
