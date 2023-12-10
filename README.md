@@ -2,7 +2,7 @@
 
 TO RUN:
 
-## SERVER
+## START THE SERVER AT LOCALHOST PORT 8080
 ```
          cargo run --release --bin server localhost:8080
 ```
