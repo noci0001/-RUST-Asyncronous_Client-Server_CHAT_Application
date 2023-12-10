@@ -3,10 +3,14 @@
 TO RUN:
 
 ## SERVER
-##         cargo run --release --bin server localhost:8080
+```
+         cargo run --release --bin server localhost:8080
+```
 
 ## CLIENT (in different shell)
-##          cargo run --release client localhost::8080
+```
+          cargo run --release client localhost::8080
+```
 
 SUMMARY: The client and the server work together by establishing a connection to each other with the client sending request to the server and the server responding to those requests.
 The server manages chatrooms using the chats and the chatMaps modules while the client sends request to join chatrooms and send messages using the client module.
