@@ -25,12 +25,13 @@ impl Chats {
   pub fn post(&self, message: Arc<String>) {
     let _ = self.publisher.send(message);
   }
+}
 
   async fn sub(chat_name: Arc<String>, mut receiver: broadcast::Receiver<Arc<String>>, leaving: Arc<Leaving>)
     {
       loop {
         let packet = match receiver.recv().await {
-          Ok(message) => Server::message {
+          Ok(message) => Server::Message {
             chat_name: caht_name.clone(),
             message: message.clone(),
           },
@@ -44,5 +45,4 @@ impl Chats {
         }
       }
     }
-}
 
