@@ -1,6 +1,8 @@
-# Asyncronous CHAT with RUST
+Asyncronous CHAT with RUST
+======================
 
 TO RUN:
+---------------------
 
 ## START THE SERVER AT LOCALHOST PORT 8080
 ```
@@ -34,7 +36,7 @@ Connection is used to represent a single connection between the server and a cli
 
 Chats contains the logic for managing the chatrooms and provides methods for creating new chatrooms and sending messages to the chatrooms.
 
-# CHATMAPS
+## CHATMAPS
 
 Chatmaps is responsible for maintaining and mapping our chatroom ids to the actual chatroom object 
 
@@ -43,6 +45,7 @@ Chatmaps is responsible for maintaining and mapping our chatroom ids to the actu
 On the client side the client is responsible for connecting to the server and sending requests to it.
 The client is not doing too much. 
 
-# NOTES:
+NOTES:
+--------
 Both server and clients utilize the library file and utils.   
 
